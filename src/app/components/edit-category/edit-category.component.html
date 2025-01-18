@@ -1,0 +1,21 @@
+<div class="container">
+  <p class="title">Modifica categoria</p>
+
+  <form
+    [formGroup]="updateForm"
+    (submit)="onSubmit()"
+    class="editForm"
+    (reset)="reset()"
+  >
+    <div class="inputs">
+      <mat-form-field class="input">
+        <mat-label>Input</mat-label>
+        <input matInput formControlName="name" />
+
+        <button class="btn" type="submit">
+          <i class="material-icons">arrow_upward</i>
+        </button>
+      </mat-form-field>
+    </div>
+  </form>
+</div>

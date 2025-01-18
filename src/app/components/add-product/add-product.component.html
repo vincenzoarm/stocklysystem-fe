@@ -1,0 +1,76 @@
+<!-- <p class="title">Aggiungi nuovo prodotto</p>
+
+<form
+  [formGroup]="addForm"
+  class="editForm"
+  (submit)="onSubmit()"
+  (reset)="reset()"
+>
+  <div class="inputs">
+    <mat-form-field class="input">
+      <mat-label>Nome</mat-label>
+      <input matInput type="text" formControlName="name" />
+    </mat-form-field>
+    <mat-form-field class="input">
+      <mat-label>Prezzo</mat-label>
+      <input matInput type="number" formControlName="price" />
+    </mat-form-field>
+    <mat-form-field class="inputText">
+      <mat-label>Descrizione</mat-label>
+      <textarea matInput type="text" formControlName="description"></textarea>
+    </mat-form-field>
+    <mat-form-field class="input">
+      <mat-label>Categoria</mat-label>
+      <mat-select formControlName="category">
+        <mat-option
+          *ngFor="let category of categories"
+          [value]="category.category_id"
+          >{{ category.name }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="buttons">
+    <button mat-raised-button type="submit">Salva</button
+    ><button mat-raised-button type="button">Reimposta</button>
+  </div>
+</form> -->
+
+<div class="form">
+  <p class="title">Aggiungi nuovo prodotto</p>
+  <form
+    [formGroup]="addForm"
+    class="editForm"
+    (submit)="onSubmit()"
+    (reset)="reset()"
+  >
+    <div class="inputs">
+      <mat-form-field class="input">
+        <mat-label>Nome</mat-label>
+        <input matInput type="text" formControlName="name" />
+      </mat-form-field>
+      <mat-form-field class="input">
+        <mat-label>Prezzo</mat-label>
+        <input matInput type="number" formControlName="price" />
+      </mat-form-field>
+      <mat-form-field class="input">
+        <mat-label>Descrizione</mat-label>
+        <textarea matInput type="text" formControlName="description"></textarea>
+      </mat-form-field>
+      <mat-form-field class="input">
+        <mat-label>Categoria</mat-label>
+        <mat-select formControlName="category">
+          <mat-option
+            *ngFor="let category of categories"
+            [value]="category.category_id"
+            >{{ category.name }}</mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="buttons">
+      <button mat-raised-button type="submit">Salva</button
+      ><button mat-raised-button type="reset">Reimposta</button>
+    </div>
+  </form>
+</div>
