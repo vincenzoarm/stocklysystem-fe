@@ -2,6 +2,20 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
+## Struttura del Progetto
+
+- src/app: Contiene i componenti principali dell'applicazione.
+- src/assets: Contiene le risorse statiche come immagini e file CSS.
+- src/environments: Contiene le configurazioni per diversi ambienti (sviluppo, produzione).
+
+## Tecnologie Utilizzate
+
+- Angular 19.0.6
+- TypeScript
+- RxJS
+- HTML
+- CSS
+
 ## Development server
 
 To start a local development server, run:
